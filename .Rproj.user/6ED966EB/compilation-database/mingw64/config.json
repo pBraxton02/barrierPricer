@@ -1,0 +1,24 @@
+{
+    "args": [
+        "-std=gnu++17",
+        "-ID:/R-4.5.0/include",
+        "-DNDEBUG",
+        "-ID:/R-4.5.0/library/Rcpp/include",
+        "-DEIGEN_DONT_VECTORIZE",
+        "-nostdinc",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/include/c++",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/include/c++/x86_64-w64-mingw32.static.posix",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/include/c++/backward",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/include",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/../../../../include",
+        "-ID:/rtools45/x86_64-w64-mingw32.static.posix/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/14.2.0/include-fixed",
+        "-include",
+        "C:/Users/Filip Bronisz/Desktop/af option pricer/barrierPricer/.Rproj.user/6ED966EB/compilation-database/mingw64/cpp-definitions.h"
+    ],
+    "pch": "Rcpp",
+    "is_cpp": true,
+    "hash": "1767620919",
+    "compiler": "17718157760293237186",
+    "rversion": "4.5.0",
+    "dbversion": 4
+}
