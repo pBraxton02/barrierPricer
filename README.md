@@ -7,7 +7,7 @@
 - Prices an **up-and-out call** under a **geometric Brownian motion** assumption.
 - Uses **risk-neutral Monte Carlo simulation** with **discrete barrier monitoring**.
 - Implements the pricing engine in **C++** for speed using **Rcpp**.
-- Provides a simple R wrapper for use in scripts and analysis workflows. citeturn770925view0turn770925view1turn406039view0
+- Provides a simple R wrapper for use in scripts and analysis workflows.
 
 ## Model assumptions
 
