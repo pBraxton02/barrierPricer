@@ -1,6 +1,6 @@
 # barrierPricer
 
-`barrierPricer` is a lightweight R package for pricing an **up-and-out European call option** with a **Monte Carlo simulation** engine implemented in **C++ via Rcpp**. The repository currently exposes a single user-facing R function, `price_up_and_out_call()`, which calls the underlying `up_and_out_call_mc()` routine compiled from `src/up_and_out_call_mc.cpp`. citeturn770925view0turn770925view1turn770925view2turn670963view2
+`barrierPricer` is a lightweight R package for pricing an **up-and-out European call option** with a **Monte Carlo simulation** engine implemented in **C++ via Rcpp**. The repository currently exposes a single user-facing R function, `price_up_and_out_call()`, which calls the underlying `up_and_out_call_mc()` routine compiled from `src/up_and_out_call_mc.cpp`.
 
 ## Features
 
@@ -16,11 +16,11 @@ The pricing engine in this repository assumes:
 - The underlying asset follows **GBM under the risk-neutral measure**.
 - The barrier is monitored at `nSteps` discrete time steps, so it is an approximation to continuously monitored barrier behavior.
 - If the simulated path touches or exceeds the barrier `B`, the option is knocked out and the payoff becomes zero.
-- If `B <= S0`, the option is treated as already knocked out at inception and the function returns `0`. citeturn770925view1
+- If `B <= S0`, the option is treated as already knocked out at inception and the function returns `0`.
 
 ## Installation
 
-This repository looks like an R package skeleton with `DESCRIPTION`, `NAMESPACE`, `R/`, and `src/` directories already present, but the package metadata in `DESCRIPTION` is still placeholder text and should be updated before publishing or wider reuse. citeturn406039view0turn670963view0turn670963view1turn670963view2
+This repository looks like an R package skeleton with `DESCRIPTION`, `NAMESPACE`, `R/`, and `src/` directories already present, but the package metadata in `DESCRIPTION` is still placeholder text and should be updated before publishing or wider reuse. 
 
 You can install locally with:
 
@@ -69,11 +69,11 @@ Prices an up-and-out European call option using Monte Carlo simulation.
 - `T`: time to maturity in years
 - `nSteps`: number of monitoring steps in each simulated path
 - `nPaths`: number of Monte Carlo paths
-- `seed`: random seed for reproducibility citeturn770925view0turn770925view1turn770925view2
+- `seed`: random seed for reproducibility 
 
 #### Returns
 
-A single numeric value: the discounted Monte Carlo estimate of the option price. citeturn770925view1
+A single numeric value: the discounted Monte Carlo estimate of the option price.
 
 ## Project structure
 
@@ -89,7 +89,7 @@ barrierPricer/
     └── up_and_out_call_mc.cpp
 ```
 
-This structure is reflected directly in the repository tree. citeturn818728view0turn670963view0turn670963view1
+This structure is reflected directly in the repository tree. 
 
 ## Notes
 
@@ -97,7 +97,7 @@ A few things in the repo still look unfinished:
 
 - `DESCRIPTION` still contains placeholder title, author, description, and license fields.
 - There is no meaningful repository description on GitHub yet.
-- The package currently appears focused on one barrier option pricer rather than a broader pricing library. citeturn406039view0turn818728view0
+- The package currently appears focused on one barrier option pricer rather than a broader pricing library. 
 
 ## Roadmap ideas
 
@@ -111,4 +111,4 @@ Potential next improvements:
 
 ## License
 
-No concrete license is currently specified in `DESCRIPTION`; the file still contains a placeholder. You should choose and declare a license before distributing the package more broadly. citeturn406039view0
+No concrete license is currently specified in `DESCRIPTION`; the file still contains a placeholder. You should choose and declare a license before distributing the package more broadly.
